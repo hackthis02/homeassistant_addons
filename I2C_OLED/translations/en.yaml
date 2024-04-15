@@ -28,6 +28,10 @@ configuration:
     name: Show Storage Information Screen
     description: >-
       When on, shows storage stats, such as amount used, total and utilisation
+  Show_Stats_Screen:
+    name: Show Stats Information Screen
+    description: >-
+      When on, shows all system stats
 
   Welcome_Screen_Text:
     name: Welcome Screen Text
@@ -122,6 +126,7 @@ configuration:
     name: Storage Screen Max Limit
     description: >-
       Numer of times to allow the Storage Information Screen to appear.
+
 
   Debug_Mode:
     name: Debug Mode

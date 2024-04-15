@@ -45,6 +45,7 @@ options:
   Show_CPU_Screen: true
   Show_Memory_Screen: true
   Show_Storage_Screen: true
+  Show_Stats_Screen: true
 
   Welcome_Screen_Text: "Welcome to {hostname}"
   Static_Screen_Text: "Hassio verion {hassio.os.version} on {hostname} with IP {ip}"
@@ -87,6 +88,7 @@ schema:
   Show_CPU_Screen: bool
   Show_Memory_Screen: bool
   Show_Storage_Screen: bool
+  Show_Stats_Screen: bool
 
   Welcome_Screen_Text: "str?"
   Static_Screen_Text: "str?"
