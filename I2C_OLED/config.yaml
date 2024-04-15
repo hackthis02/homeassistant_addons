@@ -79,6 +79,8 @@ options:
   Stats_Screen_Duration: 5
   Stats_Screen_Limit: 0
 
+  Supervizor_token: ''
+
   Debug_Mode: false
   I2C_bus: 1
   Screenshot: ''
@@ -128,3 +130,5 @@ schema:
   Debug_Mode: bool
   I2C_bus: "int(0,20)"
   Screenshot: "list(|/media)"
+
+  Supervizor_token: "str?"
