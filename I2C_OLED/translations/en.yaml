@@ -127,6 +127,14 @@ configuration:
     description: >-
       Numer of times to allow the Storage Information Screen to appear.
 
+  Stats_Screen_duration:
+    name: Stats Screen Duration
+    description: >-
+      How long in seconds to show the Stats Information Screen
+  Stats_Screen_Limit:
+    name: Stats Screen Max Limit
+    description: >-
+      Numer of times to allow the Stats Information Screen to appear.
 
   Debug_Mode:
     name: Debug Mode

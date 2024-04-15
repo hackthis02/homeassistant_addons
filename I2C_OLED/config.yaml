@@ -76,6 +76,9 @@ options:
   Storage_Screen_Duration: 5
   Storage_Screen_Limit: 0
 
+  Stats_Screen_Duration: 5
+  Stats_Screen_Limit: 0
+
   Debug_Mode: false
   I2C_bus: 1
   Screenshot: ''
@@ -118,6 +121,9 @@ schema:
 
   Storage_Screen_Duration: "int?"
   Storage_Screen_Limit: "int?"
+
+  Stats_Screen_Duration: "int?"
+  Stats_Screen_Limit: "int?"
 
   Debug_Mode: bool
   I2C_bus: "int(0,20)"
