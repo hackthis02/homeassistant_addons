@@ -1,4 +1,8 @@
 configuration:
+  Screen_Size:
+    name: Select screen size
+    description: >-
+      Select the screen size of the OLED display. 32x128 or 64x128
   Show_Static_Screen:
     name: Show Custom Screen
     description: >-
