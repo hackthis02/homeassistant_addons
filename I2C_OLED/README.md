@@ -1,6 +1,6 @@
 # I2C OLED Display
 
-Enables 128x32 pixel OLED for Raspberry Pi (both 32 and 64bit).
+Enables 128x32 or 64 pixel OLED for Raspberry Pi (both 32 and 64bit).
 
 <a href="https://www.buymeacoffee.com/jedimeat" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
@@ -40,7 +40,10 @@ The following variables are supported
 | {datetime}             | Displays the current datetime based on the defined format specified in the ```DateTime_Format``` config option. |
 | {hostname}             | Displays the current hostname of the host device |
 | {ip}                   | Displays the host device IP |
-| {hassio.info.property} | Fetches a specified property from Home Assistants supervisor API (e.g. http://supervisor/os/info). You can state the namespace and property which will populate with the responding value. This must be fixed with hassio first, followed by the namespace (e.g. os, network etc), then the property e.g. hassio.os.latest_version will call http://supervisor/os/info and display the ```latest_version``` value. |
+| {hassio.info.property}*| Fetches a specified property from Home Assistants supervisor API (e.g. http://supervisor/os/info). You can state the namespace and property which will populate with the responding value. This must be fixed with hassio first, followed by the namespace (e.g. os, network etc), then the property e.g. hassio.os.latest_version will call http://supervisor/os/info and display the ```latest_version``` value. |
+
+
+*Some properties may not be available without setting up the API access in Home Assistant and inputting the supervisor token into configuration. This is not required for the basic screens.
 
 <br>
 <br>
@@ -79,7 +82,9 @@ I also modified the configuration allowing to set the time each screen appears f
 ## Hardware Setup
 You can use 0.91 Inch 128X32 I2C module, as long as it is registered on /dev/i2c-1 which is the Rasperry Pi default.
 
-I purchased this [MakerHawk I2C OLED Display Module I2C Screen Module 0.91" 128X32 I2C](https://www.amazon.co.uk/gp/product/B07BDFXFRK/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1)
+Testing Hardware
+[MakerHawk I2C OLED Display Module I2C Screen Module 0.91" 128X32 I2C](https://amzn.eu/d/cCNIybv)
+[128x64 Pixels IIC 3.3V 5V White Character Screen Module](https://a.co/d/cTte8OO)
 
 Pin setup:
 ```
@@ -112,9 +117,15 @@ Easiest way to install this addon is to add the repository to Home Assistant.
 3. Check the "Log" and see if there are any errors.
 4. Your OLED should be displaying.
 
+### Fourth Step - enable supervisor API access (optional)
+1. Install the [Remote API Pprozy](https://developers.home-assistant.io/docs/supervisor/development/#supervisor-api-access)
+2. Get API token from add-on log.
+3. Add API toke to the configuration.
+
 ## Configuration Options
 | Name                 | Type    | Requirement  | Description                                            | Default             |
 | ---------------------| ------- | ------------ | -------------------------------------------------------| ------------------- |
+| Screen_Size     | string  | **Required** | The size of the screen you want to display. Currently only 128x32 and 128x64 are supported| `32`                 |
 | I2C_bus     | int  | **Required** | The bus number of the targeted i2c device (/dev/i2c-[ number ])                  | `1`                 |
 | Debug_Mode     | bool  | **Optional** | Weather to enable debugging output in the logs                  | `false`                 |
 | Screenshot     | string  | **Optional** | Capture a screenshot of each screen. Only value currently accepted is ```/media``` Saved to /media/[screen_name].png  | `null`                 |
