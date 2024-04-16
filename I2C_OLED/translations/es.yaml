@@ -1,0 +1,152 @@
+configuration:
+  Show_Static_Screen:
+    name: Mostrar pantalla personalizada
+    description: >-
+      Muestra la pantalla estática con el texto personalizado especificado.
+  Show_Welcome_Screen:
+    name: Mostrar pantalla de bienvenida
+    description: >-
+      Cuando activas esta opción, muestra una pantalla animada 'Bienvenido a `hostname`'.
+  Show_Splash_Screen:
+    name: Mostrar pantalla de Home Assistant
+    description: >-
+      Cuando activas esta opción, muestra la versión actual de Home Assistant OS y core.
+      Un asterisco indica si alguna de las dos requiere una actualización.
+  Show_Network_Screen:
+    name: Mostrar pantalla de información de red
+    description: >-
+      Cuando activas esta opción, muestra la dirección IP y el nombre de host.
+  Show_CPU_Screen:
+    name: Mostrar pantalla de estadísticas de CPU
+    description: >-
+      Cuando activas esta opción, muestra estadísticas de la CPU como temperatura, carga y tiempo de actividad.
+  Show_Memory_Screen:
+    name: Mostrar pantalla de información de memoria
+    description: >-
+      Cuando activas esta opción, muestra estadísticas de memoria, como cantidad utilizada, total y porcentaje de utilización.
+  Show_Storage_Screen:
+    name: Mostrar pantalla de información de almacenamiento
+    description: >-
+      Cuando activas esta opción, muestra estadísticas de almacenamiento, como cantidad utilizada, total y porcentaje de utilización.
+  Show_Stats_Screen:
+    name: Mostrar pantalla de información de estadísticas
+    description: >-
+      Cuando activas esta opción, muestra todas las estadísticas del sistema.
+
+  Welcome_Screen_Text:
+    name: Texto de pantalla de bienvenida
+    description: >-
+      Texto a mostrar cuando activas 'Mostrar pantalla de bienvenida'. Acepta todas las variables de texto estático.
+  Static_Screen_Text:
+    name: Texto de pantalla personalizada
+    description: >-
+      Texto a mostrar cuando activas 'Mostrar pantalla personalizada'. Acepta todas las variables de texto estático.
+  Graceful_Exit_Text:
+    name: Texto de detención de pantalla
+    description: >-
+      Texto a mostrar cuando detienes el servicio. Acepta las mismas variables que la pantalla personalizada.
+
+  Default_Duration:
+    name: Duración predeterminada
+    description: >-
+      Esta opción te permite establecer la duración predeterminada en segundos para mostrar cada pantalla.
+      Esta opción se ignora para las pantallas que tienen declaradas anulaciónes de la duración.
+  Scroll_Amplitude:
+    name: Amplitud de altura del desplazamiento
+    description: >-
+      Cantidad de acción de onda que tiene la animación de desplazamiento de texto. Cuanto mayor sea el número, mayor será la onda.
+  DateTime_Format:
+    name: Formato de fecha y hora
+    description: >-
+      Formato de la variable de texto estático {datetime}.
+  Static_Screen_Text_NoScroll:
+    name: Desactivar desplazamiento de pantalla personalizada
+    description: >-
+      Desactiva la animación de desplazamiento si el texto estático es demasiado grande para caber. Si se establece en verdadero, hace el mejor esfuerzo para apilar el texto como líneas centradas.
+  Temperature_Unit:
+    name: Unidad de temperatura
+    description: >-
+      Muestra la temperatura de la CPU en Celsius (C) o Fahrenheit (F).
+  Rotate:
+    name: Rotar pantalla
+    description: >-
+      Número de grados para rotar la pantalla en sentido antihorario desde el centro.
+
+  Welcome_Screen_Duration:
+    name: Duración de la pantalla de bienvenida
+    description: >-
+      Cuánto tiempo en segundos se muestra la pantalla de bienvenida.
+  Welcome_Screen_Limit:
+    name: Límite máximo de pantalla de bienvenida
+    description: >-
+      Número de veces que aparecerá la pantalla de bienvenida.
+      Por ejemplo, si estableces 2, la pantalla de bienvenida solo aparecerá 2 veces.
+
+  Splash_Screen_Duration:
+    name: Duración de la pantalla de presentación de Home Assistant
+    description: >-
+      Cuánto tiempo en segundos se muestra la pantalla de presentación de Home Assistant.
+  Splash_Screen_Limit:
+    name: Límite máximo de pantalla de presentación de Home Assistant
+    description: >-
+      Número de veces que aparecerá la pantalla de presentación de Home Assistant.
+
+  Network_Screen_Duration:
+    name: Duración de la pantalla de información de red
+    description: >-
+      Cuánto tiempo en segundos se muestra la pantalla de información de red.
+  Network_Screen_Limit:
+    name: Límite máximo de pantalla de información de red
+    description: >-
+      Número de veces para que aparecerá la pantalla de información de red.
+
+  CPU_Screen_Duration:
+    name: Duración de la pantalla de estadísticas de CPU
+    description: >-
+      Cuánto tiempo en segundos se muestra la pantalla de estadísticas de CPU.
+  CPU_Screen_Limit:
+    name: Límite máximo de pantalla de estadísticas de CPU
+    description: >-
+      Número de veces que aparecerá la pantalla de estadísticas de CPU.
+
+  Memory_Screen_Duration:
+    name: Duración de la pantalla de información de memoria
+    description: >-
+      Cuánto tiempo en segundos se muestra la pantalla de información de memoria.
+  Memory_Screen_Limit:
+    name: Límite máximo de pantalla de información de memoria
+    description: >-
+      Número de veces que aparecerá la pantalla de información de memoria.
+
+  Storage_Screen_Duration:
+    name: Duración de la pantalla de información de almacenamiento
+    description: >-
+      Cuánto tiempo en segundos se muestra la pantalla de información de almacenamiento.
+  Storage_Screen_Limit:
+    name: Límite máximo de pantalla de información de almacenamiento
+    description: >-
+      Número de veces que aparecerá la pantalla de información de almacenamiento.
+
+  Stats_Screen_duration:
+    name: Duración de la pantalla de información de estadísticas
+    description: >-
+      Cuánto tiempo en segundos se muestra la pantalla de información de estadísticas.
+  Stats_Screen_Limit:
+    name: Límite máximo de pantalla de información de estadísticas
+    description: >-
+      Número de veces que aparecerá la pantalla de información de estadísticas.
+
+  Debug_Mode:
+    name: Modo de depuración
+    description: >-
+      Habilita la depuración para el servicio imprimiendo registros de información en el registro del complemento.
+  I2C_bus:
+    name: Número de bus I2C
+    description: >-
+      Número de bus de tu dispositivo I2C.
+      Esto suele ser 1 (/dev/i2c-1), pero en ocasiones los dispositivos pueden informar esto como 0 (/dev/i2c-0).
+  Screenshot:
+    name: Ruta de captura de captura de pantalla
+    description: >-
+      Realiza una captura de pantalla mientras itera por cada pantalla en /media/[nombre_pantalla].png.
+      Para ver si se capturan imágenes, habilita la depuración.
