@@ -10,10 +10,11 @@ Enables 128x32 or 64 pixel OLED for Raspberry Pi (both 32 and 64bit).
 <br>
 
 ## Some Teaser Screenshots.
-| Welcome | HA Splash | Network Stats | CPU Stats | RAM Stats | Storage Stats | Exit Screen | 
-|-----------|-----------|-----------|-----------|---------------|---------------|---------------|
-| ![Welcome](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/welcome.png?raw=true) | ![Splash](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/splash.png?raw=true) | ![CPU Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/cpu.png?raw=true) | ![RAM Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/memory.png?raw=true) | ![Storage Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/storage.png?raw=true) | ![Network Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/network.png?raw=true) | ![Goodbye](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/static_goodbye.png?raw=true)
+| Welcome | HA Splash | Network Stats | CPU Stats | RAM Stats | Storage Stats | Exit Screen | Stats Screen* | 
+|-----------|-----------|-----------|-----------|---------------|---------------|---------------|---------------|
+| ![Welcome](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/welcome.png?raw=true) | ![Splash](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/splash.png?raw=true) | ![CPU Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/cpu.png?raw=true) | ![RAM Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/memory.png?raw=true) | ![Storage Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/storage.png?raw=true) | ![Network Stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/network.png?raw=true) | ![Goodbye](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/static_goodbye.png?raw=true) | ![stats](https://github.com/crismc/rpi_i2c_oled/blob/master/img/examples/stats.png?raw=true)
 
+*Stats screen designed for 128x64 displays only
 <br>
 
 Also available as a stand alone service outside of Home Assistant which can be accessed from the core repository:
@@ -80,7 +81,7 @@ I also modified the configuration allowing to set the time each screen appears f
 <br>
 
 ## Hardware Setup
-You can use 0.91 Inch 128X32 I2C module, as long as it is registered on /dev/i2c-1 which is the Rasperry Pi default.
+You can use 0.91 Inch 128X32 or 64 I2C module, as long as it is registered on /dev/i2c-1 which is the Rasperry Pi default.
 
 Testing Hardware
 [MakerHawk I2C OLED Display Module I2C Screen Module 0.91" 128X32 I2C](https://amzn.eu/d/cCNIybv)
