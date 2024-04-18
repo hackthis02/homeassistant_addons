@@ -83,7 +83,7 @@ I also modified the configuration allowing to set the time each screen appears f
 ## Hardware Setup
 You can use 0.91 Inch 128X32 or 64 I2C module, as long as it is registered on /dev/i2c-1 which is the Rasperry Pi default.
 
-###Testing Hardware
+### Testing Hardware
 <br>
 [MakerHawk I2C OLED Display Module I2C Screen Module 0.91" 128X32 I2C](https://amzn.eu/d/cCNIybv)
 <br>
