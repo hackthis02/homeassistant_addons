@@ -154,3 +154,8 @@ configuration:
     description: >-
       Capture a screenshot of each screen as it iterates to /media/[screen_name].png
       To see if images are captured, enable debugging.
+  Supervizor_token:
+    name: Supervisor Token
+    description: >-
+      Token to allow the addon to communicate with the Supervisor API. 
+      This is required for the addon to function certain hardward stats.

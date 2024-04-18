@@ -150,3 +150,8 @@ configuration:
     description: >-
       Realiza una captura de pantalla mientras itera por cada pantalla en /media/[nombre_pantalla].png.
       Para ver si se capturan imágenes, habilita la depuración.
+  Supervizor_token:
+    name: Token de Supervisor
+    description: >-
+     Token para permitir que el complemento se comunique con la API del Supervisor.
+     Esto es necesario para que el complemento funcione con ciertas estadísticas estrictas.
