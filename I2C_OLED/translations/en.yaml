@@ -36,6 +36,10 @@ configuration:
     name: Show Stats Information Screen
     description: >-
       When on, shows all system stats
+  stats_icon:
+    name: Stats Type
+    description: >-
+      Show only text or icons on stats screen.
 
   Welcome_Screen_Text:
     name: Welcome Screen Text
