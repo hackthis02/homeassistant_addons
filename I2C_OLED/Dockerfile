@@ -10,7 +10,7 @@ RUN \
     py3-pillow \
     py3-smbus
 
-RUN git clone -b icon --single-branch --depth 1 https://github.com/hackthis/rpi_i2c_oled.git /I2C_OLED
+RUN git clone -b master --single-branch --depth 1 https://github.com/hackthis/rpi_i2c_oled.git /I2C_OLED
 
 COPY run.sh /
 WORKDIR /data
