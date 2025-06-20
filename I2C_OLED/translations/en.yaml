@@ -36,7 +36,7 @@ configuration:
     name: Show Stats Information Screen
     description: >-
       When on, shows all system stats
-  stats_icon:
+  icon_stats:
     name: Stats Type
     description: >-
       Show only text or icons on stats screen.
