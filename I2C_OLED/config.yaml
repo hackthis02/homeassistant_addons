@@ -98,7 +98,7 @@ schema:
   Show_Memory_Screen: bool
   Show_Storage_Screen: bool
   Show_Stats_Screen: bool
-  stats_icon: "list(text|icons)?"
+  icon_stats: "list(text|icons)?"
 
   Welcome_Screen_Text: "str?"
   Static_Screen_Text: "str?"
