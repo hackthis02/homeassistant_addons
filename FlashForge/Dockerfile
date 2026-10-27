@@ -1,4 +1,5 @@
-ARG BUILD_FROM
+ARG BUILD_ARCH
+ARG BUILD_FROM=ghcr.io/home-assistant/${BUILD_ARCH}-base:latest
 FROM $BUILD_FROM
 
 #install environment
